@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-app.get('/api/', (req, res) => {
+app.get('/', (req, res) => {
     return res.send('Hello World!');
 })
 
