@@ -16,16 +16,16 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-app.get('/', (req, res) => {
+app.get('/api/', (req, res) => {
     return res.send('Hello World!');
 })
 
-app.use('/test', TestRouter);
-app.use('/update', UpdateRouter);
-app.use('/finditem', FindItemRouter);
-app.use('/gs', GodownStockRouter);
-app.use('/auth', authRouter);
-app.use('/search', searchRouter);
+app.use('/api/test', TestRouter);
+app.use('/api/update', UpdateRouter);
+app.use('/api/finditem', FindItemRouter);
+app.use('/api/gs', GodownStockRouter);
+app.use('/api/auth', authRouter);
+app.use('/api/search', searchRouter);
 
 app.listen(port, () => {
     console.log(`listening at http://localhost:${port}`);
