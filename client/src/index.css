@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#floating-input-1:focus ~label{
+  top:0;
+  font-size: 12px;
+  padding: 0 5px;
+  border-radius: 50px;
+}
+
+.floated-input{
+  top:0;
+  font-size: 12px;
+  padding: 0 5px;
+  border-radius: 50px;
+}
+
+#floating-input-2:focus ~label{
+  top:0;
+  font-size: 12px;
+  padding: 0 5px;
+  border-radius: 50px;
+}
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Width of the scrollbar */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track (behind the scrollbar) */
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle (scroll bar itself) */
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+
+/* Handle on hover */
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track (behind the scrollbar) */
+html::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle (scroll bar itself) */
+html::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+
+/* Handle on hover */
+html::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.range-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px; /* Adjust the height of the slider track */
+  background: #ddd; /* Background color of the track */
+  border-radius: 5px;
+  outline: none;
+  opacity: 0.7; /* Set initial opacity */
+  transition: opacity .2s; /* Transition effect for opacity */
+}
+
+.range-slider:hover {
+  opacity: 1; /* Fully opaque on hover */
+}
+
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px; /* Width of the thumb */
+  height: 20px; /* Height of the thumb */
+  border-radius: 50%; /* Round thumb */
+  background: #4CAF50; /* Color of the thumb */
+  cursor: pointer;
+}
+
+.range-slider::-moz-range-thumb {
+  width: 20px; /* Width of the thumb */
+  height: 20px; /* Height of the thumb */
+  border-radius: 50%; /* Round thumb */
+  background: #4CAF50; /* Color of the thumb */
+  cursor: pointer;
+}

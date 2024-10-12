@@ -1,0 +1,20 @@
+{
+  "category": [
+    "Furniture",
+    "Electronics"
+  ],
+  "priceRange": [
+    7,
+    500
+  ],
+  "status": [],
+  "type": [],
+  "material": [
+    "Plastic",
+    "Leather"
+  ],
+  "warranty_years": [],
+  "battery_required": [
+    "true"
+  ]
+}
