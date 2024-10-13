@@ -86,7 +86,7 @@ function InfoPage() {
             <div>
                 {data ? (
                     <div>
-                        <div className="w-full flex justify-center items-center border">
+                        <div className="w-full flex justify-center items-center">
                             <img src={data.image_url} alt="item" className="h-[200px] max-w-screen object-contain rounded-lg shadow-lg mb-5" />
                         </div>
                         <div>
