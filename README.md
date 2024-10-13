@@ -1,7 +1,11 @@
 
 # My Full-Stack Project
 
-This is a full-stack Godowns app. The frontend is served from port `5173`, and the backend runs on port `3000`.!
+This is a full-stack Godowns app. The frontend is served from port `5173`, and the backend runs on port `3000`.
+
+## Deployment
+
+You can access the deployed application at: [https://godowns-pi.vercel.app/](https://godowns-pi.vercel.app/)
 
 ## Prerequisites
 
@@ -81,5 +85,32 @@ Here's a quick overview of the project structure:
 ├── docker-compose.yaml
 └── README.md
 ```
+
+## Development Ideas
+
+### Project Development Log
+
+1. **API Routes and Data Formatting**
+   - **API Routes**: Creating the API routes was quite straightforward.
+   - **Data Formatting Challenge**: Formatting the raw `godowns.json` data into a tree structure required significant brainstorming.
+   - **Solution**: Recursion was employed to build the tree, and the formatted data was successfully stored in the database.
+
+2. **Search and Filter Functionality**
+   - **Autocomplete and Fuzzy Search**: Developed the autocomplete and fuzzy search routes for the search function.
+   - **Advanced Filtering System**: Implemented a filter search route for advanced filtering using MongoDB Atlas search indexes and aggregation.
+
+3. **Authentication and UI Development**
+   - **Authentication**: Implementing authentication using React Router in the frontend was relatively easy.
+   - **Responsive UI**: Designing a responsive user interface posed a challenge, but significant improvements were made to enhance the overall UI experience.
+
+4. **Tree Component in Sidebar**
+   - **Recursive Tree Component**: Successfully built the tree component using a recursive React component, implemented within the `<Sidebar/>` component.
+
+5. **Dockerization**
+   - **Containerization**: After completing the frontend and backend parts, the application was dockerized, which was a straightforward process.
+
+6. **Deployment Challenges**
+   - **Azure VM Attempt**: In a rushed environment, I spent hours experimenting with Docker Compose, Nginx, and deploying to an Azure VM on Ubuntu. I was able to make the frontend appear at the IP address: [http://4.240.83.3:5173/](http://4.240.83.3:5173/). However, the functionality was broken—requests were sent, but no responses were received.
+   - **Switch to Vercel**: Eventually, I gave up on the Azure VM deployment and deployed the app on Vercel at [https://godowns-pi.vercel.app/](https://godowns-pi.vercel.app/). While the search functionality works, reloading the page causes Vercel to throw an error, which I have been unable to resolve despite multiple attempts.
 
 Feel free to explore and modify the project to your liking. Happy coding! 🚀
